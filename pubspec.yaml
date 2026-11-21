@@ -1,0 +1,54 @@
+name: six_shot
+description: "Six-Shot - a turn-based stickman slot-shooter for 2 to 6 players."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.7.1
+  cupertino_icons: ^1.0.8
+  equatable: ^3.0.0
+  flutter_bloc: ^9.1.1
+  lottie: ^3.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^10.0.0
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  mocktail: ^1.0.5
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/characters/red/
+    - assets/characters/green/
+    - assets/characters/yellow/
+    - assets/characters/blue/
+    - assets/characters/purple/
+    - assets/characters/orange/
+    - assets/dice/
+    - assets/dice/overlays/
+    - assets/audio/
+    - assets/images/
+    - assets/lottie/splash.json
+
+  fonts:
+    - family: LilitaOne
+      fonts:
+        - asset: assets/fonts/LilitaOne-Regular.ttf
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-Variable.ttf
